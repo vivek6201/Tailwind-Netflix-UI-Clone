@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix UI Clone</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="assets/netflix_icon.ico" type="image/x-icon">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+
+<body>
+    <div class="w-full min-h-[530px] sm:min-h-[760px] lg:min-h-[710px] relative border-b-2 ">
+        <div class="absolute top-0 left-0 right-0 bottom-2 bg-[url('assets/heroBg.jpg')] md:bg-cover z-10"></div>
+        <div
+            class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-[rgba(0,0,0,0.9)] via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.9)] z-20">
+        </div>
+
+        <div class="top-0 right-0 bottom-1 left-0 absolute z-30 grid w-11/12 mx-auto grid-cols-1 grid-rows-[100px_1fr]">
+            <nav class="flex justify-between items-center gap-x-3">
+                <div>
+                    <img src="assets/logo.png" alt="" class="w-[8rem] sm:w-[12.5rem]">
+                </div>
+                <div class="flex gap-x-2 sm:gap-x-4">
+                    <div class="border border-white rounded-md overflow-hidden px-1">
+                        <select name="lang" id="lang"
+                            class="bg-transparent text-white outline-none w-full py-2 text-sm sm:text-[16px]">
+                            <option value="english" class="text-black">English</option>
+                            <option value="hindi" class="text-black">Hindi</option>
+                        </select>
+                    </div>
+                    <button
+                        class="text-white text-sm sm:text-[16px] bg-[#E50914] py-1 px-3 sm:py-2 sm:px-5 rounded-md">Sign
+                        in</button>
+                </div>
+            </nav>
+
+            <div
+                class="lg:-mt-[1rem] flex flex-col items-center justify-center text-white gap-2 sm:gap-y-6 w-full h-full px-4 max-w-[650px] lg:max-w-[800px] mx-auto">
+                <h2
+                    class="font-netflixSansMedium sm:font-netflixSansBold leading-8 sm:leading-[3rem] lg:leading-[70.4px] text-center text-[28px] sm:text-[3.0rem] lg:text-[4rem]">
+                    Unlimited movies, TV shows and
+                    more.</h2>
+                <h3 class="text-[1.5rem] font-netflixSansRegular mt-2 leading-6 sm:leading-[1.2rem] text-center">Watch
+                    anywhere. Cancel anytime.</h3>
+                <p class="text-[1.2rem] font-netflixSansRegular sm:leading-[1.5rem] text-center ">Ready to watch? Enter
+                    your email to
+                    create or restart your membership.</p>
+                <form action="#"
+                    class="flex flex-col lg:flex-row gap-y-3 w-full font-netflixSansRegular rounded-sm overflow-hidden">
+                    <input type="text" name="" id="" placeholder="Email Address"
+                        class="px-3 py-3 lg:px-5 lg:py-5 flex-grow text-black outline-none">
+                    <button type="submit"
+                        class="text-xl bg-[#E50914] px-2 lg:px-5 py-3 lg:py-5 text-white flex gap-x-1 justify-center items-center  max-w-[10rem] lg:max-w-[15rem] mx-auto">
+                        Get Started
+                        <i data-feather="chevron-right" class="text-white w-5 h-5"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <section
+        class="relative -mt-[2px] bg-lightBlack p-[1rem] sm:py-[3.1rem] sm:px-[2.5rem] border-b-[7px] border-[#1b1b1b]">
+        <div class="w-10/12 max-w-[1080px] mx-auto flex flex-col lg:flex-row justify-between items-center ">
+            <div
+                class="flex flex-col h-full w-full lg:w-[50%] justify-center items-center text-white lg:pr-[2rem] gap-y-5">
+                <h2 class="font-netflixSansMedium text-[1.6rem] sm:text-[2.5rem] lg:text-[3.1rem]  lg:text-start">Enjoy
+                    on your TV.</h2>
+                <p
+                    class="font-netflixSansRegular text-[1.2rem] sm:text-[1.3rem] lg:text-[1.6rem] text-center lg:text-left">
+                    Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <img src="assets/section1Tv.png" alt="" class="w-full lg:w-[50%] h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="relative  bg-lightBlack p-[1rem] sm:py-[3.1rem] sm:px-[2.5rem] border-b-[8px] border-[#1b1b1b]">
+        <div class="w-10/12 max-w-[1080px] mx-auto flex flex-col lg:flex-row-reverse justify-between items-center ">
+            <div
+                class="flex flex-col h-full w-full lg:w-[50%] justify-center items-center text-white lg:pr-[2rem] gap-y-5">
+                <h2
+                    class="font-netflixSansMedium text-[1.6rem] sm:text-[2.5rem] lg:text-[3.1rem] text-center lg:text-left">
+                    Download your shows to watch offline.</h2>
+                <p
+                    class="font-netflixSansRegular text-[1.2rem] sm:text-[1.3rem] lg:text-[1.6rem] text-center lg:text-left">
+                    Save your favourites easily and always have something to watch.</p>
+            </div>
+            <img src="assets/section2Mobile.jpg" alt="" class="w-full lg:w-[50%] h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="relative bg-lightBlack p-[1rem] sm:py-[3.1rem] sm:px-[2.5rem] border-b-[8px] border-[#1b1b1b]">
+        <div class="w-10/12 max-w-[1080px] mx-auto flex flex-col lg:flex-row justify-between items-center ">
+            <div class="flex flex-col h-full w-full lg:w-[50%] justify-center text-white lg:pr-[2rem] gap-y-5">
+                <h2
+                    class="font-netflixSansMedium text-[1.6rem] sm:text-[2.5rem] lg:text-[3.1rem] text-center lg:text-left">
+                    Watch everywhere.</h2>
+                <p
+                    class="font-netflixSansRegular text-[1.2rem] sm:text-[1.3rem] lg:text-[1.6rem] text-center lg:text-left">
+                    Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <img src="assets/section3Tv.png" alt="" class="w-full lg:w-[50%] h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section
+        class="relative -mt-[2px] bg-lightBlack p-[1rem] sm:py-[3.1rem] sm:px-[2.5rem] border-b-8 border-[#1b1b1b]">
+        <div class="w-10/12 max-w-[1080px] mx-auto flex flex-col lg:flex-row-reverse justify-between items-center ">
+            <div
+                class="flex flex-col h-full w-full lg:w-[50%] justify-center items-center text-white lg:pr-[2rem] gap-y-5">
+                <h2
+                    class="font-netflixSansMedium text-[1.6rem] sm:text-[2.5rem] lg:text-[3.1rem] text-center lg:text-left">
+                    Create profiles for children.</h2>
+                <p
+                    class="font-netflixSansRegular text-[1.2rem] sm:text-[1.3rem] lg:text-[1.6rem] text-center lg:text-left">
+                    Send children on adventures with their favourite characters in a space made just for them—free with
+                    your membership.</p>
+            </div>
+            <img src="assets/section4Image.png" alt="" class="w-full lg:w-[50%] h-full object-cover">
+        </div>
+    </section>
+
+    <section class="bg-lightBlack border-b-4 border-[#1b1b1b]">
+        <div
+            class="w-10/12 max-w-[1080px] mx-auto p-[0.7rem] sm:py-[4.3rem] sm:px-[2.8rem] md:px-0 md:py-[4.3rem] text-white">
+            <h2 class="text-2xl sm:text-[2.5rem] lg:text-[3rem] text-center font-netflixSansMedium mt-5 mb-10">
+                Frequently Asked Questions</h2>
+            <div
+                class="flex justify-between items-center lg:w-10/12 lg:mx-auto text-[1.3rem] md:text-[1.7rem] mb-5 px-8 py-4 bg-[#303030] font-netflixSansRegular cursor-pointer">
+                <span>What is Netflix?</span>
+                <i data-feather="plus"></i>
+            </div>
+            <div
+                class="flex justify-between items-center lg:w-10/12 lg:mx-auto text-[1.3rem] md:text-[1.7rem] mb-5 px-8 py-4 bg-[#303030] font-netflixSansRegular cursor-pointer">
+                <span>How much does Netflix cost?</span>
+                <i data-feather="plus"></i>
+            </div>
+            <div
+                class="flex justify-between items-center lg:w-10/12 lg:mx-auto text-[1.3rem] md:text-[1.7rem] mb-5 px-8 py-4 bg-[#303030] font-netflixSansRegular cursor-pointer">
+                <span>Where can I watch?</span>
+                <i data-feather="plus"></i>
+            </div>
+            <div
+                class="flex justify-between items-center lg:w-10/12 lg:mx-auto text-[1.3rem] md:text-[1.7rem] mb-5 px-8 py-4 bg-[#303030] font-netflixSansRegular cursor-pointer">
+                <span>How do I cancel?</span>
+                <i data-feather="plus"></i>
+            </div>
+            <div
+                class="flex justify-between items-center lg:w-10/12 lg:mx-auto text-[1.3rem] md:text-[1.7rem] mb-5 px-8 py-4 bg-[#303030] font-netflixSansRegular cursor-pointer">
+                <span>What can i watch on Netflix?</span>
+                <i data-feather="plus"></i>
+            </div>
+            <div
+                class="flex justify-between items-center lg:w-10/12 lg:mx-auto text-[1.3rem] md:text-[1.7rem] mb-5 px-8 py-4 bg-[#303030] font-netflixSansRegular cursor-pointer">
+                <span>Is Netflix Good for kids?</span>
+                <i data-feather="plus"></i>
+            </div>
+
+            <p class="mt-[5rem] mb-5 text-[1.2rem] font-netflixSansRegular sm:leading-[1.5rem] text-center">Ready to
+                watch? Enter your email to create or restart your membership</p>
+            <form action="#"
+                class="flex flex-col lg:flex-row gap-y-3 w-full md:w-9/12 md:mx-auto font-netflixSansRegular rounded-sm overflow-hidden ">
+                <input type="text" name="" id="" placeholder="Email Address"
+                    class="px-3 py-3 lg:px-5 lg:py-5 flex-grow text-black outline-none">
+                <button type="submit"
+                    class="text-xl bg-[#E50914] px-2 lg:px-5 py-3 lg:py-5 text-white flex gap-x-1 justify-center items-center  max-w-[10rem] lg:max-w-[15rem] mx-auto">
+                    Get Started
+                    <i data-feather="chevron-right" class="text-white w-5 h-5"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-lightBlack w-full ">
+        <div class="max-w-[1080px] w-10/12 mx-auto flex flex-col items-start gap-y-5 py-16 sm:pt-20 sm:px-16 text-[#737373] sm:pb-10">
+            <p>Questions? Call 000-800-919-1694</p>
+            <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-5 sm:gap-x-10 md:gap-x-20 place-items-start">
+                <li class="w-[10rem] mt-2">FAQ</li>
+                <li class="w-[10rem] mt-2">Investor Relations</li>
+                <li class="w-[10rem] mt-2">Privacy</li>
+                <li class="w-[10rem] mt-2">Speed Test</li>
+                <li class="w-[10rem] mt-2">Help Centre</li>
+                <li class="w-[10rem] mt-2">Jobs</li>
+                <li class="w-[10rem] mt-2">Cookie Preferences</li>
+                <li class="w-[10rem] mt-2">Legal Notices</li>
+                <li class="w-[10rem] mt-2">Account</li>
+                <li class="w-[10rem] mt-2">Ways to Watch</li>
+                <li class="w-[10rem] mt-2">Corporate Information</li>
+                <li class="w-[10rem] mt-2">Only on Netflix</li>
+                <li class="w-[10rem] mt-2">Media Centre</li>
+                <li class="w-[10rem] mt-2">Terms of Use</li>
+                <li class="w-[10rem] mt-2">Contact Us</li>
+            </ul>
+
+            <select name="lang" id="lang"
+                class="bg-transparent text-white outline-none w-full text-sm sm:text-[16px] max-w-[7rem] border border-opacity-5 px-5 py-3">
+                <option value="english" class=" bg-lightBlack text-white">English</option>
+                <option value="hindi" class="text-white bg-lightBlack">Hindi</option>
+            </select>
+            <p>Netflix-India</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
